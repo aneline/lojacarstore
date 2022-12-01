@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Loja de Carros</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm table-info border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3"> @RenderBody()
+        </main>
+    </div>
+  <div>
+       <img class="mw-100" src="~/imag/images.jpg" alt="Max-width 500%">
+          <img class="mw-100" src="~/imag/imag5.jpg" alt="Max-width 500%">
+             <img class="mw-100" src="~/imag/imag6.jpg" alt="Max-width 500%">
+  </div>
+</div>
+<br>
+       <p><span class="text-info"></span>PROCURANDO UM CARRO?<p>
+        <p>Agora é um bom momento para comprar um carro, podemos lhe fornecer novos e usados em boas condições, venha nós conhecer.</span><p>
+       
+        </div>
+    <div class="row">
+        <div class="col">
+    
+             <br>
+
+            <img src="~/imag/imag.jpg"  class="img-responsive pull-left " width="350px">
+            <img src="~/imag/imag1.jpg"  class="img-responsive pull-left " width="350px">
+            <img src="~/imag/imag2.jpg"  class="img-responsive pull-left " width="350px">
+            <img src="~/imag/imag3.jpg"  class="img-responsive pull-left " width="350px">
+            <img src="~/imag/imag4.jpg"  class="img-responsive pull-left " width="350px">
+            <img src="~/imag/imag5.jpg"  class="img-responsive pull-left " width="350px">
+            
+        </div>
+        <body class="container mt-4 .bg-light"></body>
+    </div>
+
+        <div class="embed-responsive embed-responsive-16by9">
+       <iframe width="400" height="315" src="https://www.youtube.com/embed/7zO5LuLWQao" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container" style="text-align:auto"> 
+            &copy; 2022 - Loja de Carros - <a asp-area="" asp-controller="Home"></a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
